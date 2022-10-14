@@ -3,14 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hznagui <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: hznagui <hznagui@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 15:03:33 by hznagui           #+#    #+#             */
-/*   Updated: 2022/10/08 17:12:46 by hznagui          ###   ########.fr       */
+/*   Updated: 2022/10/13 19:11:55 by hznagui          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdio.h>
 
 char	*ft_strrchr(const char *s, int c)
 {

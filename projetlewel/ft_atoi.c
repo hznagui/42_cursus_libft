@@ -6,12 +6,10 @@
 /*   By: hznagui <hznagui@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/07 16:32:18 by hznagui           #+#    #+#             */
-/*   Updated: 2022/10/12 17:36:03 by hznagui          ###   ########.fr       */
+/*   Updated: 2022/10/13 19:11:18 by hznagui          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
 
 int	ft_return(int c)
 {
