@@ -19,7 +19,7 @@ void *ft_calloc(size_t count, size_t size)
         count = 1;
         size = 1;
     }
-    int *a = malloc(count * size);
+    size_t *a = malloc(count * size);
     if (!a)
         return(0);
     ft_memset(a,0,count * size);

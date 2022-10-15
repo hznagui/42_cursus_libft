@@ -10,37 +10,22 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdio.h>
-#include <string.h>
-#include <stdlib.h>
-#include "ft_strlen.c"
+
+#include "libft.h"
 
 
 char *ft_strdup(const char *s1)
 {
     size_t i,y;
     y=0;
-    i = strlen(s1);
+    i = ft_strlen(s1);
     char *f = malloc(i);
+    if (!f)
+        return(0);
     while (y <= i)
     {
         f[y] = s1[y];
         y++;
     }
     return(f);
-}
- 
-int main()
-{
-    char source[] = "dela7a zamel";
-    
- 
-    // A copy of source is created dynamically
-    // and pointer to copy is returned.
-    char* target = strdup(source);
-    char* target1 = ft_strdup(source);
- 
-    printf("%s\n", target);
-    printf("%s", target1);
-    return 0;
 }
