@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hznagui <hznagui@student.42.fr>            +#+  +:+       +#+        */
+/*   By: hznagui <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 21:57:38 by hznagui           #+#    #+#             */
-/*   Updated: 2022/10/13 19:11:50 by hznagui          ###   ########.fr       */
+/*   Updated: 2022/10/06 23:10:07 by hznagui          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 
 size_t	ft_strlcpy(char *dst, char *src, size_t dstsize)
