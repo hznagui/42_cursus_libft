@@ -6,19 +6,19 @@
 /*   By: hznagui <hznagui@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 00:01:49 by hznagui           #+#    #+#             */
-/*   Updated: 2022/10/13 01:36:43 by hznagui          ###   ########.fr       */
+/*   Updated: 2022/10/16 18:25:36 by hznagui          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_memcmp(const void *s1, const void *s2, size_t n)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-    unsigned char *p;
-    unsigned char *l;
-    size_t	i;
+	unsigned char	*p;
+	unsigned char	*l;
+	size_t			i;
 
 	i = 0;
-    p =(unsigned char*)s1;
-    l =(unsigned char*)s2;
+	p = (unsigned char *)s1;
+	l = (unsigned char *)s2;
 	while (i < n)
 	{
 		if (p[i] != l[i])
