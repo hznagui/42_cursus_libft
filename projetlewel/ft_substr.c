@@ -13,7 +13,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "ft_strlen.c"
-#include "ft_strdup.c"
+//#include "ft_strdup.c"
 
 char *ft_substr(char const *s, unsigned int start, size_t len)
 {
@@ -22,7 +22,7 @@ char *ft_substr(char const *s, unsigned int start, size_t len)
     o = 0;
     char *p = malloc(len);
     if(ft_strlen(s) < (size_t)start)
-     ft_strdup(0);
+     return(0);
     if (!p)
         return (0);
     while (o < len)
@@ -33,8 +33,8 @@ char *ft_substr(char const *s, unsigned int start, size_t len)
     p[o]='\0';
     return(p);
 }
-int main()
+/*int main()
 {
     char l[]="hello nega";
-    printf("%s",ft_substr(l,5,0));
-}
+    printf("%s",ft_substr(l,4,9));
+}*/
