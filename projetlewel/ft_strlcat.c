@@ -10,6 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
 	size_t	i;
@@ -19,6 +21,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	i = 0;
 	u = 0;
 	y = 0;
+	if ((!dst && !dstsize))
+		return (ft_strlen(src));
 	while (src[y])
 		y++;
 	while (dst[u])
@@ -36,3 +40,13 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 		return (y + u);
 	}
 }
+/*#include <string.h>
+int main()
+{
+	char* p = NULL;
+	char o[]= "hello";
+	char l[]= "hello";
+
+	ft_strlcat(o,p,3);
+	//strlcat(l,p,3);
+}*/

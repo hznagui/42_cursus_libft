@@ -17,10 +17,11 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	o;
 	char	*p;
 
+	p = NULL;
+	p = malloc(len * sizeof(char) + 1);
 	o = 0;
-	*p = malloc(len);
-	if (ft_strlen(s) < (size_t)start)
-		ft_strdup("");
+	if (ft_strlen(s) <= (size_t)start)
+		return (ft_strdup(""));
 	if (!p)
 		return (0);
 	while (o < len)

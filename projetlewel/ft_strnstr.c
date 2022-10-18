@@ -10,16 +10,20 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	int		i;
-	int		j;
-	char	*p;
+	size_t		i;
+	size_t		j;
+	char		*p;
 
 	p = (char *)haystack;
 	j = 0;
 	i = 0;
-	while (p[i + j] && needle[j] && i < len)
+	if (!haystack && !len)
+		return (0);
+	while (p[i + j] && needle[j] && i + j < len)
 	{
 		if (p[i + j] == needle[j])
 			j++;
@@ -34,3 +38,11 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	else
 		return (0);
 }
+/*int main()
+{
+	char	*s1 = "MZIRIBMZIRIBMZE123";
+	char	*s2 = "MZIRIBMZE";
+	char	*i1 = ft_strnstr(s1, s2,strlen(s2));
+	char	*i2 = strnstr(s1, s2,strlen(s2));
+	printf("%s \n%s",i1,i2);
+}*/
