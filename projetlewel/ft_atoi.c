@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-int	ft_return(int c)
+static int	ft_return(int c)
 {
 	if (c == 1)
 		return (-1);

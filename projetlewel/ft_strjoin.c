@@ -6,7 +6,7 @@
 /*   By: hznagui <hznagui@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/15 21:29:38 by hznagui           #+#    #+#             */
-/*   Updated: 2022/10/18 00:01:36 by hznagui          ###   ########.fr       */
+/*   Updated: 2022/10/20 21:05:13 by hznagui          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	a = 0;
 	y = 0;
+	if (!s1 || !s2)
+		return (0);
 	p = malloc((ft_strlen(s1) + ft_strlen(s2) + 1) * sizeof(char));
 	if (!p)
 		return (0);

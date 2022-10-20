@@ -6,13 +6,13 @@
 /*   By: hznagui <hznagui@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/15 21:48:32 by hznagui           #+#    #+#             */
-/*   Updated: 2022/10/16 18:00:29 by hznagui          ###   ########.fr       */
+/*   Updated: 2022/10/20 21:08:22 by hznagui          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	is_here(char s1, char const *set)
+static int	is_here(char s1, char const *set)
 {
 	size_t	k;
 
@@ -32,6 +32,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	o;
 	char	*p;
 
+	if (!s1 || !set)
+		return (0);
 	o = 0;
 	l = ft_strlen(s1);
 	while (s1[o] && is_here(s1[o], set))
