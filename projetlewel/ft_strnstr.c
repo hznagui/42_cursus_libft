@@ -38,11 +38,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	else
 		return (0);
 }
-/*int main()
-{
-	char	*s1 = "MZIRIBMZIRIBMZE123";
-	char	*s2 = "MZIRIBMZE";
-	char	*i1 = ft_strnstr(s1, s2,strlen(s2));
-	char	*i2 = strnstr(s1, s2,strlen(s2));
-	printf("%s \n%s",i1,i2);
-}*/

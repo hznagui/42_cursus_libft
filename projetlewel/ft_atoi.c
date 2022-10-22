@@ -45,6 +45,5 @@ int	ft_atoi(const char *str)
 			return (ft_return(c));
 		i++;
 	}
-	z *= c;
-	return (z);
+	return (z * c);
 }

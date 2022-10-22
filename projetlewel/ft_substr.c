@@ -19,7 +19,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 	if (!s)
 		return (0);
-		p = malloc(len * sizeof(char) + 1);
+	p = malloc(len * sizeof(char) + 1);
 	o = 0;
 	if (ft_strlen(s) <= (size_t)start)
 		return (ft_strdup(""));
