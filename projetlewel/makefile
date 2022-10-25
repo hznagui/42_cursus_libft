@@ -9,9 +9,9 @@ FILES = ft_isalpha ft_isdigit ft_isalnum ft_isascii ft_isprint \
 		ft_strmapi ft_striteri ft_itoa ft_split\
 
 	
-BONUS_FILES =	ft_lstnew ft_lstadd_front ft_lstsize \
-				ft_lstlast ft_lstadd_back ft_lstdelone \
-				ft_lstclear ft_lstiter ft_lstmap\
+BONUS_FILES =	ft_lstnew \
+				ft_lstadd_front \
+ 				ft_lstsize\
 
 OBJS_DIR = objs/
 
