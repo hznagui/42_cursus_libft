@@ -6,7 +6,7 @@
 /*   By: hznagui <hznagui@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/16 16:43:48 by hznagui           #+#    #+#             */
-/*   Updated: 2022/10/25 23:42:24 by hznagui          ###   ########.fr       */
+/*   Updated: 2022/10/26 23:14:33 by hznagui          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,6 +59,10 @@ typedef struct s_list
 }t_list;
 
 void ft_lstadd_front(t_list **lst, t_list *new);
+t_list *ft_lstlast(t_list *lst);
+void ft_lstadd_back(t_list **lst, t_list *new);
+void ft_lstdelone(t_list *lst, void (*del)(void *));
+void ft_lstclear(t_list **lst, void (*del)(void *));
 int ft_lstsize(t_list *lst);
 t_list *ft_lstnew(void *content);
 #endif

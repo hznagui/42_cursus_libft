@@ -9,16 +9,16 @@ FILES = ft_isalpha ft_isdigit ft_isalnum ft_isascii ft_isprint \
 		ft_strmapi ft_striteri ft_itoa ft_split\
 
 	
-BONUS_FILES =	ft_lstnew \
-				ft_lstadd_front \
- 				ft_lstsize\
+BONUS_FILES =	ft_lstnew_bonus ft_lstlast_bonus \
+				ft_lstadd_front_bonus ft_lstadd_back_bonus \
+ 				ft_lstsize_bonus ft_lstdelone_bonus ft_lstclear_bonus \
 
 OBJS_DIR = objs/
 
 SRCS = $(FILES:=.c)
 OBJS = $(addprefix $(OBJS_DIR), $(FILES:=.o))
 
-OBJS_BONUS = $(OBJS) $(addprefix $(OBJS_DIR), $(BONUS_FILES:=.o))
+OBJS_BONUS = $(addprefix $(OBJS_DIR), $(BONUS_FILES:=.o))
 
 CC = cc
 FLAGS = -Wall -Wextra -Werror
