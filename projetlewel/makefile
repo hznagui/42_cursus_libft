@@ -9,7 +9,7 @@ FILES = ft_isalpha ft_isdigit ft_isalnum ft_isascii ft_isprint \
 		ft_strmapi ft_striteri ft_itoa ft_split\
 
 	
-BONUS_FILES =	ft_lstnew_bonus ft_lstlast_bonus \
+BONUS_FILES =	ft_lstnew_bonus ft_lstlast_bonus ft_lstiter_bonus\
 				ft_lstadd_front_bonus ft_lstadd_back_bonus \
  				ft_lstsize_bonus ft_lstdelone_bonus ft_lstclear_bonus \
 
