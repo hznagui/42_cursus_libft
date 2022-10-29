@@ -6,7 +6,7 @@
 /*   By: hznagui <hznagui@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/15 21:48:32 by hznagui           #+#    #+#             */
-/*   Updated: 2022/10/26 19:44:58 by hznagui          ###   ########.fr       */
+/*   Updated: 2022/10/28 22:15:35 by hznagui          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	while (s1[o] && is_here(s1[o], set))
 		o++;
 	if (o == l)
-		ft_strdup("");
+		return (ft_strdup(""));
 	while (is_here(s1[l - 1], set))
 		l--;
 	p = ft_substr(s1, o, l - o);

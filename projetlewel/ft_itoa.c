@@ -6,7 +6,7 @@
 /*   By: hznagui <hznagui@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 17:58:25 by hznagui           #+#    #+#             */
-/*   Updated: 2022/10/27 15:11:46 by hznagui          ###   ########.fr       */
+/*   Updated: 2022/10/28 23:39:15 by hznagui          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,17 +48,17 @@ char	*ft_itoa(int n)
 	p = 0;
 	j = 0;
 	u = n;
+	if (!u)
+		p = 1;
 	if (n == -2147483648)
 		return (ft_strdup("-2147483648"));
 	ft_neg(&n, &j);
-	if (!u)
-		p = 1;
 	while (u != 0)
 	{
 		p++;
 		u /= 10;
 	}
-	i = malloc(p * sizeof(char) + 1 + j);
+	i = malloc((p + 1 + j) * sizeof(char));
 	if (!i)
 		return (0);
 	return (ft_number(n, i, p + j, j));
