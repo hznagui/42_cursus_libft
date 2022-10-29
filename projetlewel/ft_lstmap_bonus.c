@@ -6,7 +6,7 @@
 /*   By: hznagui <hznagui@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 16:18:57 by hznagui           #+#    #+#             */
-/*   Updated: 2022/10/29 00:11:56 by hznagui          ###   ########.fr       */
+/*   Updated: 2022/10/29 21:11:49 by hznagui          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 
 	if (!f || !lst || !del)
 		return (0);
+	head = NULL;
 	while (lst)
 	{
 		new = ft_lstnew(f(lst -> content));
