@@ -31,7 +31,5 @@ fclean: clean
 
 re: fclean $(NAME)
 
-bonus:	$(OBJ_FILE) $(BONUS_OBJ)
-	ar rc $(NAME) $(OBJ_FILE) $(BONUS_OBJ)
-
-.PHONEY: all clean fclean re bonus
+bonus: $(BONUS_OBJ)
+	ar rc $(NAME) $(BONUS_OBJ)
