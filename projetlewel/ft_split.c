@@ -6,7 +6,7 @@
 /*   By: hznagui <hznagui@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 17:11:43 by hznagui           #+#    #+#             */
-/*   Updated: 2022/10/30 19:59:29 by hznagui          ###   ########.fr       */
+/*   Updated: 2022/10/31 15:47:47 by hznagui          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,14 +45,15 @@ static char	**free_all(char **str, size_t max)
 	while (i >= 0)
 		free(str[i--]);
 	free (str);
-	return(0);
+	return (0);
 }
-static char **ft_return(char *s,char c,char **p)
-{	
+
+static char	**ft_return(char *s, char c, char **p)
+{
 	size_t	e;
 	size_t	u;
 	size_t	a;
-	
+
 	u = 0;
 	a = 0;
 	while (u < nbr_of_words((char *)s, c))
@@ -63,16 +64,17 @@ static char **ft_return(char *s,char c,char **p)
 		while (s[e] != c && s[e] != '\0')
 			e++;
 		p[u] = ft_substr((char *)s, a, e - a);
-	if (!p[u])
-	{
-		return (free_all(p, u));
-	}
-	u++;
-	a = e;
+		if (!p[u])
+		{
+			return (free_all(p, u));
+		}
+		u++;
+		a = e;
 	}
 	p[u] = NULL;
-	return(p);
+	return (p);
 }
+
 char	**ft_split(char const *s, char c)
 {
 	char	**p;
@@ -82,5 +84,5 @@ char	**ft_split(char const *s, char c)
 	p = malloc((nbr_of_words((char *)s, c) + 1) * (sizeof(char *)));
 	if (!p)
 		return (0);
-	return (ft_return((char *)s,c,p));
+	return (ft_return((char *)s, c, p));
 }

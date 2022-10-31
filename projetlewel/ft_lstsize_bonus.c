@@ -6,7 +6,7 @@
 /*   By: hznagui <hznagui@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 22:42:51 by hznagui           #+#    #+#             */
-/*   Updated: 2022/10/31 01:43:35 by hznagui          ###   ########.fr       */
+/*   Updated: 2022/10/31 15:42:02 by hznagui          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	ft_lstsize(t_list *lst)
 	int		i;
 
 	if (!lst)
-		return(0);
+		return (0);
 	i = 0;
 	p = lst;
 	while (p)

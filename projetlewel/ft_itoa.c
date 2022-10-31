@@ -6,7 +6,7 @@
 /*   By: hznagui <hznagui@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 17:58:25 by hznagui           #+#    #+#             */
-/*   Updated: 2022/10/31 00:26:26 by hznagui          ###   ########.fr       */
+/*   Updated: 2022/10/31 15:41:17 by hznagui          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,6 @@
 static char	*ft_number(int n, char *i, int p, int j)
 {
 	i[p] = '\0';
-	if (n == 0)
-    {
-		p--;
-        i[p] = '0';
-        return (i);
-    }
 	while (p-- > 0)
 	{
 		if (j == 1 && p == 0)

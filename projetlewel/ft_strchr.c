@@ -6,7 +6,7 @@
 /*   By: hznagui <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/07 20:53:13 by hznagui           #+#    #+#             */
-/*   Updated: 2022/10/29 00:04:52 by hznagui          ###   ########.fr       */
+/*   Updated: 2022/10/31 15:49:03 by hznagui          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@ char	*ft_strchr(const char *s, int c)
 		if (s[i] == (char)c)
 			return (u + i);
 		i++;
-		
 	}
 	return (0);
 }
