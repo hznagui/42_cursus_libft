@@ -6,7 +6,7 @@
 /*   By: hznagui <hznagui@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 19:27:18 by hznagui           #+#    #+#             */
-/*   Updated: 2022/10/27 15:48:15 by hznagui          ###   ########.fr       */
+/*   Updated: 2022/10/31 01:52:47 by hznagui          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	else
 	{
 		p = *lst;
-		while (p -> next != '\0')
+		while (p -> next)
 		{
 			p = p -> next;
 		}
