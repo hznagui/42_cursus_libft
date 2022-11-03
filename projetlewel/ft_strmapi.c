@@ -6,7 +6,7 @@
 /*   By: hznagui <hznagui@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 23:29:55 by hznagui           #+#    #+#             */
-/*   Updated: 2022/10/21 22:58:50 by hznagui          ###   ########.fr       */
+/*   Updated: 2022/11/03 17:16:12 by hznagui          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char	*o;
 
 	a = 0;
-	if (!s)
+	if (!s || !f)
 		return (0);
 	o = malloc(ft_strlen(s) * sizeof(char) + 1);
 	if (!o)
